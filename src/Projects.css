@@ -1,0 +1,153 @@
+.projects {
+    margin-top: 0;
+}
+  .pro_header {
+    margin: 0;
+    /* margin-bottom: 2rem; */
+}
+  
+  .pro_header h1 {
+    color:#fa2b2b;
+    margin-left: 120px;
+    font-size: 3rem;
+}
+
+  .full_container {
+    background-color: #1b1b1b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  .pro_title {
+    margin-bottom: 1.0rem;
+    margin-left: 10px;
+  }
+  
+  .pro_title h2 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  .pro_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .projects_content {
+    margin-right: 2rem; /* Add some spacing between content and image */
+    max-width: 600px; /* Set maximum width */
+    word-wrap: break-word; /* Allow line breaks within the content */
+    margin-left: 10px;
+  }
+  
+  .projects_content p {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  .tools {
+    margin-top: 1rem;
+    margin-left: 10px;
+  }
+  
+  .tools h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tools p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0.3rem;
+  }
+
+  .pro_image img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; object-position: center center; opacity: 1; transition: opacity 500ms ease 0s;
+  }
+  .pro_image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .frame {
+    background-color: white;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 0px 5px #ccc;
+  }
+  .frame img {
+    max-width: 100%;
+    height: 400px;
+  }
+  
+  .shelf-bar {
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    background-color: white;
+  }
+  .view_project {
+    background-color: #6a84ac;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1.2rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1rem 0;
+  }
+
+  .blue-container {
+    background-color: #6a84ac;
+  }
+  .grey-container {
+    background-color: grey;
+  }
+  span a {
+    text-decoration: none;
+    color: #fff;
+  }
+  @media (max-width: 868px) {
+    .full_container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .pro_section {
+        padding: 1rem; /* Reduce padding for better mobile layout */
+    }
+
+    .projects_content {
+        margin-right: 0; /* Remove right margin on mobile */
+    }
+    .frame {
+      position: relative;
+      overflow: hidden; 
+      height: 200px;
+    }
+    .frame img {
+      object-fit: contain; /* Fit the image within the frame */
+      object-position: center;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .pro_image {
+        margin-top: 1rem; /* Add spacing between content and image on mobile */
+    }
+    .pro_header h1 {
+      color:#fa2b2b;
+      margin-left: 10px;
+      font-size: 3rem;
+  }
+}

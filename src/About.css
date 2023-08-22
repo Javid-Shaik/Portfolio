@@ -1,0 +1,50 @@
+/* About.css */
+.about {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+    font-family: 'poppins' sans-serif;
+  }
+  
+  .title {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .title h2 {
+    position: left;
+    margin-left: 270px;
+    color: #fa2b2b;
+    font-size: 2rem;
+  }
+  
+  .m_content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #0e0d0d;
+    word-spacing: 0.3em;
+  }
+  
+  .m_content p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .m_content p:last-child {
+    margin-bottom: 0;
+  }
+  
+/* About.css */
+@media (max-width: 768px) {
+  .title h2 {
+    margin-left: 0; /* Reset margin to center the title */
+    text-align: center; /* Center the title text */
+    font-size: 1.8rem; /* Adjust font size */
+  }
+
+  .m_content {
+    padding: 0 1rem;
+    font-size: 1rem; /* Adjust font size */
+  }
+}

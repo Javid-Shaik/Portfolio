@@ -45,6 +45,13 @@ function Header() {
       setMenuOpen(false);
     }
   }
+  const scrollToContact = () =>{
+    const contactSection = document.getElementById('contact');
+    if(contactSection){
+      contactSection.scrollIntoView({behavior: 'smooth' , block:'start'});
+      setMenuOpen(false);
+    }
+  }
   return (
     <div className={`header ${scrolling ? 'scrolled' : ''}`}>
       <nav className="nav">
@@ -59,7 +66,7 @@ function Header() {
         <ul className={`nav-list ${menuOpen ? 'active' : ''}`}>
           <li><a href="#about" onClick={scrollToAbout}>About</a></li>
           <li><a href="#projects" onClick={scrollToProjects}>Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onClick={scrollToContact}>Contact</a></li>
         </ul>
       </nav>
     </div>

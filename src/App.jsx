@@ -1,21 +1,39 @@
 import React from 'react';
-import './App.css'; // Import your CSS file for styling
-// Import your custom components
+import './App.css'; 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './Header';
 import Profilephoto from './Profilephoto';
 import About from './About';
 import Projects from './Projects';
-// import Contact from './Contact';
+import Contact from './Contact';
+import ContactMe from './ContactMe';
 
 function App() {
   return (
-    <div className="App" id="home">
-      <Header id="home"/>
+    <Router>
+      <div className="App">
+        {/* Place your Header component outside of Routes */}
+        <Header id="home" />
+
+        {/* Use Routes to define your routing */}
+        <Routes>
+          {/* Each Route should wrap a component */}
+          <Route path="/" element={<Home />} />
+          <Route path="/contact-me" element={<ContactMe />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+function Home() {
+  return (
+    <>
       <Profilephoto />
       <About />
-      <Projects id="projects"/>
-      {/* <Contact /> */}
-    </div>
+      <Projects id="projects" />
+      <Contact />
+    </>
   );
 }
 

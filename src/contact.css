@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact {
+    background-color: #fff;
+    width: 100%;
+}
+
+.con_content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 150px;
+    padding-bottom: 100px;
+}
+
+.con_content p {
+    color: #1b1b1b;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.contact_btn {
+    background-color: #fff;
+}
+.contact_btn span {
+    text-align: center;
+}
+.copyright{
+    margin-left: 40%;
+    color: #1b1b1b;
+    padding-bottom: 20px;
+}
+.copyright {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.endbar {
+    width: 100%;
+    height: 20px;
+    background-color: #b37070;
+}
+.links {
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.links a {
+    color: #1b1b1b;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    position: relative; 
+    overflow: hidden; 
+    margin: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.links a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #7f9be7; /* Color for hover effect */
+    transition: height 0.3s ease; /* Add a transition effect for height */
+    transform-origin: bottom; /* Set the transform origin to the bottom */
+    transform: scaleY(0);
+}
+.links a:hover::before {
+    height: 20%; /* Increase height on hover to reveal the background */
+    transform: scaleY(1);
+} 
+.con_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ... (existing CSS above) ... */
+
+@media (max-width: 1150px) {
+    .con_container {
+        flex-direction: column;
+        align-items: flex-start; /* Align container items to the left */
+    }
+
+    .con_content {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .links {
+        align-items: flex-start; /* Align links to the left */
+        margin-right: 0;
+        margin-top: 0px; 
+        margin-left: 0; 
+    }
+
+    .contact_btn {
+        max-width: 50%;
+        text-align: left;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .links a {
+        margin: 0.2rem 0; /* Adjust the margin for a smaller gap */
+    }
+
+    .con_content p {
+        font-size: 2.5rem;
+    }
+
+    .copyright {
+        margin-left: 30%;
+    }
+}

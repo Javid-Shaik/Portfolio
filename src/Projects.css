@@ -1,8 +1,10 @@
 .projects {
     margin-top: 0;
+    background:none;
 }
   .pro_header {
     margin: 0;
+    background-color: none;
     /* margin-bottom: 2rem; */
 }
   
@@ -10,6 +12,7 @@
     color:#fa2b2b;
     margin-left: 120px;
     font-size: 3rem;
+    background-color: none;
 }
 
   .full_container {

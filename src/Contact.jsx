@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect, scrollTo } from "react";
 import './contact.css';
 import { useNavigate } from 'react-router-dom';
+import { colors } from "@material-ui/core";
+
 
 function Contact() {
+
     const navigate = useNavigate(); // Initialize navigate
 
     const goToContactMe = () => {
         navigate('/contact-me'); // Navigate to the ContactMe page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     return (
         <div className="contact" id="contact">

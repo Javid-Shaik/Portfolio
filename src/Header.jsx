@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './header.css'; // Import your CSS file for styling
+import { Link , useLocation} from 'react-router-dom';
 
 function Header() {
   const [scrolling, setScrolling] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // Define menuOpen state variable
+  const location = useLocation();
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -20,6 +22,16 @@ function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    if (location.hash) {
+      const targetElement = document.querySelector(location.hash);
+      if (targetElement) {
+        // Scroll to the target element's top position
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -31,13 +43,11 @@ function Header() {
       setMenuOpen(false);
     }
   };
-  const scrollToHome = () => {
-    const homeSection = document.getElementById('home');
-    if(homeSection){
-      homeSection.scrollIntoView({ behavior : 'smooth'});
-      setMenuOpen(false);
-    }
-  }
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setMenuOpen(false);
+  };
+
   const scrollToProjects = () =>{
     const projectSection = document.getElementById('projects');
     if(projectSection){
@@ -56,7 +66,7 @@ function Header() {
     <div className={`header ${scrolling ? 'scrolled' : ''}`}>
       <nav className="nav">
         <div className="logo">
-          <a href="#home" onClick={scrollToHome}><img src="src\assets\react.svg" alt="Logo"/></a>
+          <Link to="/#home" onClick={scrollToTop}><img src="src\assets\react.svg" alt="Logo"/></Link>
         </div>
         <div className={`menu-bars ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <div className="bar"></div>
@@ -64,8 +74,8 @@ function Header() {
           <div className="bar"></div>
         </div>
         <ul className={`nav-list ${menuOpen ? 'active' : ''}`}>
-          <li><a href="#about" onClick={scrollToAbout}>About</a></li>
-          <li><a href="#projects" onClick={scrollToProjects}>Projects</a></li>
+          <li><a href={`${window.location.origin}#about`} onClick={scrollToAbout}>About</a></li>
+          <li><a href={`${window.location.origin}#projects`} onClick={scrollToProjects}>Projects</a></li>
           <li><a href="#contact" onClick={scrollToContact}>Contact</a></li>
         </ul>
       </nav>

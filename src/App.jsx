@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="App">
         {/* Place your Header component outside of Routes */}
-        <Header id="home" />
+        <Header/>
 
         {/* Use Routes to define your routing */}
         <Routes>
@@ -29,10 +29,10 @@ function App() {
 function Home() {
   return (
     <>
-      <Profilephoto />
+      <Profilephoto id="home" />
       <About />
       <Projects id="projects" />
-      <Contact />
+      <Contact id="contact"/>
     </>
   );
 }

@@ -1,25 +1,31 @@
 .contact_me {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 70%;
+    margin: 30px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
   
-  .contact_me p {
-    font-size: 18px;
+  .c_t {
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #1b1b1b;
   }
   
   .contact_me ul {
     list-style: none;
     padding: 0;
   }
-  
+  .name-details , .email-phone-details {
+    display: inline-flex;
+    gap: 10px;
+    width: 100%;
+  }
   .contact_me li {
     margin-bottom: 15px;
+    
   }
   
   .contact_me input[type="text"],
@@ -31,11 +37,16 @@
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-bottom: 10px;
+    background-color: #fff;
+    outline: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1b1b1b;
   }
   
   .contact_me input[type="submit"] {
     background-color: #007bff;
-    color: #fff;
+    color: #1b1b1b;
     border: none;
     padding: 10px 15px;
     border-radius: 3px;
@@ -45,9 +56,36 @@
   .contact_me input[type="submit"]:hover {
     background-color: #0056b3;
   }
-  
-  .contact_me textarea {
-    resize: vertical;
-    min-height: 150px; /* Adjust the minimum height as needed */
+  .message {
+    position: relative;
   }
+
+ 
+  .message {
+    position: relative;
+  }
+  
+  .message input[type="text"] {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .message input[type="text"]::placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 14px;
+    
+    pointer-events: none; /* Allow clicking through the placeholder */
+  }
+
+  .error-message {
+    color: red;
+  }
+  
+
   

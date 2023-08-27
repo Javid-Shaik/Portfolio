@@ -29,7 +29,7 @@ function Projects() {
                 </div> 
                 <div className="pro_image">
                     <div className="frame">
-                        <img src="src\assets\Screenshot (7).png" alt="Project Screenshot"/>
+                        <img src="public\assets\Screenshot (7).png" alt="Project Screenshot"/>
                     </div>
                     <div className="shelf-bar"></div>
                 </div>
@@ -56,7 +56,7 @@ function Projects() {
                 </div> 
                 <div className="pro_image">
                     <div className="frame">
-                        <img src="src\assets\Billing.png" alt="Project Screenshot"/>
+                        <img src="public\assets\Billing.png" alt="Project Screenshot"/>
                     </div>
                     <div className="shelf-bar"></div>
                 </div>
@@ -83,7 +83,7 @@ function Projects() {
                 </div> 
                 <div className="pro_image">
                     <div className="frame">
-                        <img src="src\assets\speedtyping.png" alt="Project Screenshot"/>
+                        <img src="public\assets\speedtyping.png" alt="Project Screenshot"/>
                     </div>
                     <div className="shelf-bar"></div>
                 </div>

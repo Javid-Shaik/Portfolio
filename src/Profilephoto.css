@@ -101,12 +101,13 @@
     
   }
   .p_photo {
-    margin-left: 100px;
-    align-items: center;
+    margin-left: 0;
+    /* align-items: center; */
   }
   .p_photo img{ 
-    width: 50%;
-    height: 50%;
+    margin-top: 0;
+    width: 300px;
+    height: 600px;
   }
   .p_content {
     text-align: left;
@@ -116,7 +117,8 @@
 
   .p_content h2 {
     margin-top: 10px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-left: 0;
   }
 
   .p_content p {
@@ -129,6 +131,7 @@
   }
 
   .get_in_touch {
-    width: 100%
+    width: 90%;
+    /* margin-left: 10px; */
   }
 }

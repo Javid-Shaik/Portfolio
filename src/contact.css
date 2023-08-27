@@ -100,7 +100,7 @@
 }
 
 .copyright a {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 
@@ -122,6 +122,7 @@
         margin-right: 0;
         margin-top: 0px; 
         margin-left: 0; 
+        margin-bottom: 20px;
     }
 
     .contact_btn {
@@ -133,7 +134,7 @@
     }
 
     .links a {
-        margin: 0.2rem 0; 
+        margin: 0.1rem 0; 
     }
 
     .con_content p {
@@ -141,10 +142,11 @@
     }
 
     .copyright {
-        margin-left: 25%;
+        margin-left: 15%;
     }
-    .copyright a{
-        font-size: 0.9rem;
+    .copyright p,
+    .copyright a {
+        font-size: 0.8rem;
     }
     .btn_desc p{
         font-size: 2rem;

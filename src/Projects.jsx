@@ -12,13 +12,14 @@ function Projects() {
                         <h2>Library Management System</h2>
                     </div>
                     <div className="projects_content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi omnis reiciendis assumenda alias. Harum sequi velit ut adipisci consequuntur voluptatem recusandae, commodi numquam at earum quisquam facilis esse nihil illo?</p>
+                        <p>Crafted a dynamic Library Management System (LMS) web app, facilitating efficient content organization and delivery. Combined a user-friendly interface with Django's robust backend, ensuring seamless performance and integration.</p>
                     </div>
                     <div className="tools">
                         <h3>Development Tools</h3>
                         <p>+ Django</p>
                         <p>+ Html</p>
                         <p>+ Css</p>
+                        <p>+ Git</p>
                     </div>
                     <div className='pro_button' >
                         <button className='view_project' >
@@ -39,7 +40,7 @@ function Projects() {
                         <h2>Billing Software</h2>
                     </div>
                     <div className="projects_content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi omnis reiciendis assumenda alias. Harum sequi velit ut adipisci consequuntur voluptatem recusandae, commodi numquam at earum quisquam facilis esse nihil illo?</p>
+                        <p>Created a user-friendly billing software with Python and Tkinter, utilizing a secure SQLite3 database for customer info, transactions, and seamless bill management. Empowered by features like bill generation, printing, and search for enhanced efficiency and customer service.</p>
                     </div>
                     <div className="tools">
                         <h3>Development Tools</h3>
@@ -66,7 +67,7 @@ function Projects() {
                         <h2>Speed Typing Lite</h2>
                     </div>
                     <div className="projects_content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi omnis reiciendis assumenda alias. Harum sequi velit ut adipisci consequuntur voluptatem recusandae, commodi numquam at earum quisquam facilis esse nihil illo?</p>
+                        <p>Designed Speed Typing Lite, a web-based typing game using HTML, CSS, and JavaScript. Challenge yourself with random words under time constraints, boosting your score with each accurate keystroke.</p>
                     </div>
                     <div className="tools">
                         <h3>Development Tools</h3>

@@ -26,7 +26,7 @@ function Contact() {
                 <div className="links">
                     <a href="https://github.com/Javid-Shaik/">+ GITHUB</a>
                     <a href="https://www.linkedin.com/in/shaik-javid-basha-b03790267/">+ LINKEDIN</a>
-                    <a href="">+ TWITTER</a>
+                    <a href="https://www.instagram.com/javidshaikk._">+ INSTAGRAM</a>
                 </div>
             </div>
             <div className="copyright">

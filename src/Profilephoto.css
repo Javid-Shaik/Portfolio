@@ -12,7 +12,7 @@
   .p_photo {
     flex: 1;
     padding: 2rem;
-    color: white;
+    color: rgb(17, 16, 16);
   }
   
   .p_content {
@@ -57,6 +57,38 @@
     margin-right: 100px;
   }
   
+  .typing-effect {
+    opacity: 1;
+    display: inline-block;
+    white-space: nowrap;
+    animation: typing 3s steps(40) infinite, blink-caret 0.75s step-end infinite;
+    overflow: hidden;
+    border-right: 0.15em solid rgb(252, 144, 3);
+    width: 0.1rem;
+    height: 3.2rem;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #7fb0fa;
+    }
+  }
+  
+  
+  
+  
 /* Add media query for mobile devices */
 @media (max-width: 768px) {
   .profile_sec {
@@ -66,7 +98,9 @@
     padding: 2rem 3%;
     
   }
-
+  .p_photo {
+    margin-left: 100px;
+  }
   .p_content {
     text-align: left;
     align-self: flex-start; /* Align content to the left */

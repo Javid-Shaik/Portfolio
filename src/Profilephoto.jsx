@@ -1,9 +1,14 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import './Profilephoto.css';
 import { useNavigate } from 'react-router-dom';
 
 function Profilephoto(){
     const navigate = useNavigate(); // Initialize navigate
+    const [animateTyping, setAnimateTyping] = useState(false);
+
+    useEffect(() => {
+        setAnimateTyping(true);
+      }, []);
 
     const goToContactMe = () => {
         navigate('/contact-me'); // Navigate to the ContactMe page
@@ -12,8 +17,8 @@ function Profilephoto(){
         <section className='profile_sec'>
             <div className='p_content'>
                 <p>Hi, I am</p>
-                <h2>Shaik Javid Basha</h2>
-                <h1>I am Web Developer</h1>
+                <h2 className={`typing-effect typing-cursor ${animateTyping ? 'animate' : ''}`} style={{maxWidth:'fit-content'}} >Shaik Javid Basha</h2>
+                <h1>Turning Ideas into Seamless Web Solutions</h1>
                 <button className='get_in_touch'onClick={goToContactMe} >
                     <span>GET IN TOUCH</span>
                 </button>
@@ -26,3 +31,5 @@ function Profilephoto(){
 }
 
 export default Profilephoto
+
+

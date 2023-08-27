@@ -33,6 +33,15 @@ function ContactMe(){
             toast.error('Please enter a valid email address');
             return;
           }
+        if (
+            formData.fname.trim() === '' ||
+            formData.lname.trim() === '' ||
+            formData.subject.trim() === '' ||
+            formData.message.trim() === ''
+            ) {
+                toast.error('Please fill in all required fields');
+                return;
+        }
         
         try {
           const response = await fetch('http://localhost:3001/api/send-email', {
@@ -75,6 +84,7 @@ function ContactMe(){
             <p className="c_t">LET'S BUILD A THING</p>
             <form method="POST" onSubmit={handleSubmit}>
                 <ul>
+                    {(formData.fname.trim() === '' || formData.lname .trim() === '') && <p className="error-message">* required</p>}
                     <li className="name-details">
                         <input type="text" name="fname" placeholder="FIRST NAME *"onChange={handleChange}/>
                         <input type="text" name="lname" placeholder="LAST NAME *"onChange={handleChange}/>
@@ -85,13 +95,15 @@ function ContactMe(){
                         
                         <input type="number" name="phone" placeholder="PHONE"onChange={handleChange}/>
                     </li>
+                    {formData.subject.trim() === '' && <p className="error-message">* required</p>}
                     <li className="subject">
                         <input type="text" name="subject" placeholder="SUBJECT *"onChange={handleChange}/>
                     </li>
+                    {formData.message.trim() === '' && <p className="error-message">* required</p>}
                     <li className="message">
                         <input type="text" name="message" placeholder="MESSAGE *"onChange={handleChange}/>
                     </li>
-                    <li><input type="submit" name="submit" placeholder="SUBMIT"/></li>
+                    <li><input type="submit" name="submit" value="SEND IT"/></li>
                 </ul>
             </form>
         </div>

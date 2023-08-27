@@ -1,7 +1,9 @@
 import React, { useEffect, scrollTo } from "react";
 import './contact.css';
 import { useNavigate } from 'react-router-dom';
-// import { colors } from "@material-ui/core";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 function Contact() {
@@ -28,9 +30,10 @@ function Contact() {
                     </div>
                 </div>
                 <div className="links">
-                    <a href="https://github.com/Javid-Shaik/">+ GITHUB</a>
-                    <a href="https://www.linkedin.com/in/shaik-javid-basha-b03790267/">+ LINKEDIN</a>
-                    <a href="https://www.instagram.com/javidshaikk._">+ INSTAGRAM</a>
+                    <a href="https://github.com/Javid-Shaik/"><FontAwesomeIcon icon={faGithub} /> GITHUB</a>
+                    <a href="https://www.linkedin.com/in/shaik-javid-basha-b03790267/"><FontAwesomeIcon icon={faLinkedin} /> LINKEDIN</a>
+                    <a href="https://www.instagram.com/javidshaikk._"><FontAwesomeIcon icon={faInstagram} /> INSTAGRAM</a>
+                    <a href="mailto:shaikjavidbasha528@gmail.com"><FontAwesomeIcon icon={faEnvelope} />  Gmail</a>
                 </div>
             </div>
             <div className="copyright">

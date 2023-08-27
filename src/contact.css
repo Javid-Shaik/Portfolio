@@ -55,7 +55,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+  .copyright a,
   .links a {
     color: #1b1b1b;
     font-size: 18px;
@@ -71,7 +71,7 @@
     z-index: 1;
     width: fit-content;
   }
-  
+  .copyright a::before,
   .links a::before {
     content: '';
     position: absolute;
@@ -83,8 +83,9 @@
     transition: bottom 0.3s ease, opacity 0.3s ease; /* Transition for both properties */
     opacity: 0;
     z-index: -1;
+    
   }
-  
+  .copyright a:hover::before,
   .links a:hover::before {
     bottom: 0; /* Move from below to on top of the link */
     opacity: 1;
@@ -97,17 +98,23 @@
     justify-content: space-between;
     align-items: center;
 }
-/* ... (existing CSS above) ... */
+
+.copyright a {
+    font-size: 13px;
+}
+
 
 @media (max-width: 1150px) {
     .con_container {
         flex-direction: column;
         align-items: flex-start; /* Align container items to the left */
+        justify-content: space-between;
     }
 
     .con_content {
         margin-left: 10px;
         margin-bottom: 20px;
+    
     }
 
     .links {
@@ -118,6 +125,7 @@
     }
 
     .contact_btn {
+        margin-bottom: 0;
         max-width: 50%;
         text-align: left;
         padding-left: 20px;
@@ -125,7 +133,7 @@
     }
 
     .links a {
-        margin: 0.2rem 0; /* Adjust the margin for a smaller gap */
+        margin: 0.2rem 0; 
     }
 
     .con_content p {
@@ -133,6 +141,12 @@
     }
 
     .copyright {
-        margin-left: 30%;
+        margin-left: 25%;
+    }
+    .copyright a{
+        font-size: 0.9rem;
+    }
+    .btn_desc p{
+        font-size: 2rem;
     }
 }

@@ -12,6 +12,10 @@ function Contact() {
         navigate('/contact-me'); // Navigate to the ContactMe page
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    const scrollToHome = () => {
+        window.scrollTo({ top: 0});
+    }
     return (
         <div className="contact" id="contact">
             <div className="con_container">
@@ -30,7 +34,7 @@ function Contact() {
                 </div>
             </div>
             <div className="copyright">
-                <p>© Copyright 2023 - Shaik Javid Basha</p>
+                <p>© Copyright 2023 &nbsp;&nbsp;&nbsp;&nbsp;-<a href={`${window.location.origin}#home`} onClick={scrollToHome}>Shaik Javid Basha</a></p>
             </div>
             <div className="endbar"></div>
         </div>

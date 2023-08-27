@@ -66,7 +66,7 @@ function Header() {
     <div className={`header ${scrolling ? 'scrolled' : ''}`}>
       <nav className="nav">
         <div className="logo">
-          <Link to="/#home" onClick={scrollToTop}><img src="public\assets\javid basha.gif" alt="Logo" className='logo_img'/></Link>
+          <Link to="/#home" onClick={scrollToTop}><img src="\assets\javid basha.gif" alt="Logo" className='logo_img'/></Link>
         </div>
         <div className={`menu-bars ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <div className="bar"></div>

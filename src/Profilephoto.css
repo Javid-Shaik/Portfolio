@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 3%;
+    width: 100%;
   }
   
   .p_content,
@@ -20,6 +21,7 @@
   }
   
   .p_photo {
+    margin-top: 100px;
     text-align: right;
   }
   
@@ -100,6 +102,11 @@
   }
   .p_photo {
     margin-left: 100px;
+    align-items: center;
+  }
+  .p_photo img{ 
+    width: 50%;
+    height: 50%;
   }
   .p_content {
     text-align: left;
@@ -113,8 +120,8 @@
   }
 
   .p_content p {
-    margin: 0;
-    font-size: 1.2rem;
+    margin-top: 50px;
+    font-size: 1rem;
   }
 
   .p_content h1 {
@@ -122,6 +129,6 @@
   }
 
   .get_in_touch {
-    width: 100%;
+    width: 100%
   }
 }

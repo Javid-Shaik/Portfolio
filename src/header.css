@@ -4,9 +4,9 @@
 }
 /*  */
 .header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
-  max-width: 100%;
   background-color: #fa2b2b; /* Initial background color */
   color: #1b1b1b;
   padding: 1rem 0;

@@ -23,3 +23,10 @@
 .read-the-docs {
   color: #888;
 } */
+
+.App {
+  width: 100%;
+  /* overflow-x: hidden; */
+  /* overflow-y: scroll; */
+  overflow: hidden;
+}

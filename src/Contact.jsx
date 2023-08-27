@@ -1,7 +1,7 @@
 import React, { useEffect, scrollTo } from "react";
 import './contact.css';
 import { useNavigate } from 'react-router-dom';
-import { colors } from "@material-ui/core";
+// import { colors } from "@material-ui/core";
 
 
 function Contact() {

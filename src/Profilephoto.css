@@ -102,17 +102,20 @@
   }
   .p_photo {
     margin-left: 0;
+    background-color: #fa2b2b;
     
   }
   .p_photo img{ 
     margin-top: 0;
     width: 300px;
     height: 600px;
+    background-color: #fa2b2b;
   }
   .p_content {
     text-align: left;
     align-self: flex-start; /* Align content to the left */
     color: #1b1b1b;
+    
   }
 
   .p_content h2 {

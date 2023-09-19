@@ -24,7 +24,7 @@ function Profilephoto(){
                 </button>
             </div>
             <div className='p_photo'>
-                <img src="i2.png"/>
+                <img src="public\assets\Image 2023-09-04 at 09.14.01.jpg"/>
             </div>
         </section>
     );

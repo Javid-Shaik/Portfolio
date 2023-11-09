@@ -11,7 +11,6 @@ const app = express();
 app.use(cors()); // Use CORS middleware if necessary
 app.use(express.json());
 
-
 app.post('/api/send-email', async (req, res) => {
   const { fname, lname, email, phone, subject, message } = req.body;
 

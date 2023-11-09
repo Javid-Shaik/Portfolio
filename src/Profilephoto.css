@@ -12,7 +12,7 @@
   .p_content,
   .p_photo {
     flex: 1;
-    padding: 2rem;
+    padding: 1rem;
     color: rgb(17, 16, 16);
   }
   
@@ -58,6 +58,7 @@
     /* width: 300px; */
     height: 600px;
     margin-right: 30px;
+    opacity: 0.5;
   }
   
   .typing-effect {
@@ -142,7 +143,7 @@
 @media (max-width:558px) {
   .p_photo img{ 
     margin-top: 0;
-    height: 600px;
+    height: 500px;
     background-color: #05a4c0;
   }
 }

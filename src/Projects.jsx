@@ -22,8 +22,8 @@ function Projects() {
                         <p>+ Git</p>
                     </div>
                     <div className='pro_button' >
-                        <button className='view_project' >
-                            <span>VIEW PROJECT</span>
+                        <button className='view_project' onClick={() => window.open('https://library-management-system-vo7k.onrender.com', '_blank')}>
+                            <span><a href='https://library-management-system-vo7k.onrender.com'>VIEW PROJECT</a></span>
                         </button>
                     </div>
                 </div> 

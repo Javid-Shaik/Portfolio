@@ -1,6 +1,6 @@
 /* Profilephoto.css */
 .profile_sec {
-    background-color: #fa2b2b;
+    background-color: #05a4c0;
     height: 750px;
     display: flex;
     justify-content: space-between;
@@ -21,8 +21,9 @@
   }
   
   .p_photo {
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: right;
+    margin-right: auto;
   }
   
   .p_content p {
@@ -41,7 +42,7 @@
   }
   
   .get_in_touch {
-    background-color: #fa2b2b;
+    background-color: #05a4c0;
     color: #1b1b1b;
     border: 1px solid #1b1b1b;
     padding: 1.2rem 1.2rem;
@@ -54,9 +55,9 @@
   .p_photo img {
     object-fit: cover;
     border-radius: 1%;
-    width: 300px;
+    /* width: 300px; */
     height: 600px;
-    margin-right: 100px;
+    margin-right: 30px;
   }
   
   .typing-effect {
@@ -102,14 +103,13 @@
   }
   .p_photo {
     margin-left: 0;
-    background-color: #fa2b2b;
-    
+    background-color: #05a4c0;
+    margin-right: 100px;
   }
   .p_photo img{ 
     margin-top: 0;
-    width: 300px;
-    height: 600px;
-    background-color: #fa2b2b;
+    height: 750px;
+    background-color: #05a4c0;
   }
   .p_content {
     text-align: left;
@@ -136,5 +136,13 @@
   .get_in_touch {
     width: 90%;
     /* margin-left: 10px; */
+  }
+}
+
+@media (max-width:558px) {
+  .p_photo img{ 
+    margin-top: 0;
+    height: 600px;
+    background-color: #05a4c0;
   }
 }

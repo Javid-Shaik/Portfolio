@@ -1,10 +1,16 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors'); // for cross-origin requests if needed
+const dotenv = require('dotenv');
+const path = require('path');
+
+dotenv.config()
+
 
 const app = express();
 app.use(cors()); // Use CORS middleware if necessary
 app.use(express.json());
+
 
 app.post('/api/send-email', async (req, res) => {
   const { fname, lname, email, phone, subject, message } = req.body;
@@ -14,7 +20,7 @@ app.post('/api/send-email', async (req, res) => {
     service: 'Gmail', // e.g., Gmail, Outlook, etc.
     auth: {
       user: 'shaikjavidbasha528@gmail.com',
-      pass: 'zcjetqpfrcghondt'
+      pass: process.env.PASSWORD
     }
   });
 
@@ -52,6 +58,20 @@ app.post('/api/send-email', async (req, res) => {
     res.status(500).json({ message: 'Error sending email' });
   }
 });
+
+
+// Deployment code
+const __dirname1 = path.resolve()
+if(process.env.NODE_ENV=='production'){
+  app.use(express.static(path.join(__dirname1 , "/dist")));
+  app.get("*", (req, res)=>{
+    res.sendFile(path.resolve(__dirname1, "dist", "index.html"))
+  })
+} else {
+  app.get("/" , (req, res)=>{
+    res.sendFile("API is running successfully");
+  })
+}
 
 const port = 3001; // Your desired port
 app.listen(port, () => {

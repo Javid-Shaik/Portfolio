@@ -20,7 +20,8 @@ app.post('/api/send-email', async (req, res) => {
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD
-    }
+    },
+    debug:true,
   });
 
   const mailOptions = {
